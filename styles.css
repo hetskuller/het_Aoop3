@@ -1,61 +1,62 @@
-/* styles.css - Black Theme Edition */
-
-/* Global Styles */
-:root {
-    --primary-color: #000000;
-    --primary-dark: #1a1a1a;
-    --secondary-color: #333333;
-    --danger-color: #b00020;
-    --gray-color: #888888;
-    --light-gray: #121212;
-    --white: #ffffff;
-    --shadow: 0 10px 25px rgba(0, 0, 0, 0.6);
-    --transition: all 0.3s ease-in-out;
-    --error-bg: #2c0b0e;
-    --error-border: #b00020;
-    --error-color: #ff5252;
-    --success-color: #00e676;
-    --success-bg: #003d2c;
-    --success-border: #00c853;
-    --radius: 10px;
-}
-
 body {
-    font-family: 'Poppins', sans-serif;
-    background-color: var(--light-gray);
-    margin: 0;
-    padding: 0;
-    color: var(--white);
+  background-color: #121212;
+  color: white;
+  font-family: Arial, sans-serif;
+  text-align: center;
+  padding: 20px;
 }
 
-/* Example Elements */
+h1 {
+  font-size: 2em;
+  margin-bottom: 10px;
+}
+
+.centered a {
+  color: blue;
+  text-decoration: none;
+  font-weight: bold;
+  border-bottom: 1px solid white;
+  margin-bottom: 20px;
+  display: inline-block;
+}
+
+table {
+  width: 80%;
+  margin: 20px auto;
+  border-collapse: collapse;
+  background-color: green;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+th, td {
+  padding: 15px;
+  border-bottom: 1px solid #333;
+}
+
+th {
+  background-color: red;
+  color: #fff;
+}
+
+td {
+  color: #ddd;
+}
+
 button {
-    background-color: var(--primary-dark);
-    color: var(--white);
-    border: none;
-    padding: 10px 20px;
-    border-radius: var(--radius);
-    box-shadow: var(--shadow);
-    cursor: pointer;
-    transition: var(--transition);
+  padding: 8px 12px;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  cursor: pointer;
+  margin: 2px;
 }
 
-button:hover {
-    background-color: var(--secondary-color);
+.edit {
+  background-color: #444;
 }
 
-.alert-danger {
-    background-color: var(--error-bg);
-    border-left: 5px solid var(--error-border);
-    color: var(--error-color);
-    padding: 1em;
-    border-radius: var(--radius);
+.delete {
+  background-color: #b30000;
 }
 
-.alert-success {
-    background-color: var(--success-bg);
-    border-left: 5px solid var(--success-border);
-    color: var(--success-color);
-    padding: 1em;
-    border-radius: var(--radius);
-}
